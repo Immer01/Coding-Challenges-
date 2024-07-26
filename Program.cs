@@ -1,7 +1,19 @@
-﻿// Data Types
+﻿
+int value = 1;
+value = value + 1;
+Console.WriteLine("First Increment: " + value);
 
-Console.WriteLine("Signed integral types:");
-Console.WriteLine($"sbyte : {sbyte.MinValue} to {sbyte.MaxValue}");
-Console.WriteLine($"short : {short.MinValue} to {short.MaxValue}");
-Console.WriteLine($"int : {int.MinValue} to {int.MaxValue}");
-Console.WriteLine($"long : {long.MinValue} to {long.MaxValue}");
+value += 1;
+Console.WriteLine("Second Increment: " + value);
+
+value++;
+Console.WriteLine("Third Increment: " + value);
+
+value = value - 1;
+Console.WriteLine("First Decrement: " + value);
+
+value -= 1;
+Console.WriteLine("Second Decrement: " + value);
+
+value--;
+Console.WriteLine("Third Decrement: " + value);
