@@ -1,19 +1,10 @@
-﻿
-int value = 1;
-value = value + 1;
-Console.WriteLine("First Increment: " + value);
+﻿// Converting to Celsius
 
-value += 1;
-Console.WriteLine("Second Increment: " + value);
+int fahrenheit = 94;
+decimal temperature = ((fahrenheit - 32) * 5m / 9);
+Console.WriteLine("The temperature is " + temperature + " degrees Celsius");
 
-value++;
-Console.WriteLine("Third Increment: " + value);
+fahrenheit = 94;
+temperature = ((fahrenheit - 32m) * 5m / 9m);
+Console.WriteLine("The temperature is " + Math.Round(temperature) + " degrees Celsius");
 
-value = value - 1;
-Console.WriteLine("First Decrement: " + value);
-
-value -= 1;
-Console.WriteLine("Second Decrement: " + value);
-
-value--;
-Console.WriteLine("Third Decrement: " + value);
